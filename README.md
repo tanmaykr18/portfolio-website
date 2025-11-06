@@ -5,7 +5,6 @@ A modern, responsive personal portfolio website built with React + Vite, showcas
 ## 🚀 Features
 
 - ✨ Modern and responsive design
-- 🌓 Dark/Light mode toggle with persistent storage
 - 🎨 Smooth animations with Framer Motion
 - 📱 Mobile-first approach
 - 🎯 Project filtering by technology stack
@@ -108,9 +107,6 @@ Place your images in the `public/images/` directory and update the paths in `por
 - Profile picture: `/images/profile.jpg`
 - Project images: `/images/projects/[project-name].jpg`
 
-### Update Resume
-
-Place your resume PDF in `public/documents/tanmay-kumar-resume.pdf`
 
 ## 📄 Pages
 
@@ -165,7 +161,6 @@ MIT License - feel free to use this template for your own portfolio!
 
 **Tanmay Kumar**
 - Email: tanmaykumar18102002@gmail.com
-- Phone: +91-7061745715
 - LinkedIn: [linkedin.com/in/tanmay-kumar](https://linkedin.com/in/tanmay-kumar)
 - GitHub: [github.com/tanmay-kumar](https://github.com/tanmay-kumar)
 
