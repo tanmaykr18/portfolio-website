@@ -1,11 +1,14 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import portfolioData from '../../data/portfolio.json';
+import SkillModal from './SkillModal';
 import { slideUp, slideDown, fadeIn } from '../../utils/animations';
 
 const Hero = () => {
   const { personal, skills } = portfolioData;
+  const [selectedCategory, setSelectedCategory] = useState(null);
 
   const skillCategories = [
     { title: 'Languages', items: skills.languages, icon: '💻' },
@@ -108,7 +111,8 @@ const Hero = () => {
               {skillCategories.map((category, idx) => (
                 <div
                   key={idx}
-                  className="bg-gray-50 rounded-lg p-4 hover:shadow-md transition-shadow"
+                  onClick={() => setSelectedCategory(category)}
+                  className="bg-gray-50 rounded-lg p-4 hover:shadow-md transition-all cursor-pointer hover:scale-105"
                 >
                   <div className="flex items-center mb-2">
                     <span className="text-2xl mr-2">{category.icon}</span>
@@ -123,7 +127,7 @@ const Hero = () => {
                         key={skillIdx}
                         className="px-2 py-0.5 bg-primary/10 text-primary rounded-full text-xs font-medium"
                       >
-                        {skill}
+                        {skill.name}
                       </span>
                     ))}
                     {category.items.length > 3 && (
@@ -138,6 +142,14 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
+
+      {/* Skill Modal */}
+      {selectedCategory && (
+        <SkillModal
+          category={selectedCategory}
+          onClose={() => setSelectedCategory(null)}
+        />
+      )}
     </section>
   );
 };

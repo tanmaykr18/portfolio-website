@@ -12,12 +12,50 @@
     "resume": "/documents/tanmay-kumar-resume.pdf"
   },
   "skills": {
-    "languages": ["JavaScript", "Python","C++"],
-    "frameworks": ["Node.js", "React.js", "Express.js", "MongoDB", "RESTful APIs", "Bootstrap", "Redux"],
-    "tools": ["MongoDB Atlas", "Google Cloud Storage", "Gemini API", "GitHub", "VS Code", "JWT"],
-    "backend": ["Database Operations", "API Development", "Authentication Systems", "Data Processing", "Server Architecture"],
-    "ai": ["Gemini API Integration", "Prompt Engineering", "Video Generation (Veo3)", "GenAI Applications", "OCR Processing", "Automated Content Creation"],
-    "soft": ["Problem Solving", "Team Collaboration", "Quick Learning", "Analytical Thinking", "Communication"]
+    "languages": [
+      { "name": "JavaScript", "icon": "💻", "description": "Expert in modern ES6+ JavaScript for full-stack development. Proficient in async programming, promises, and building scalable applications." },
+      { "name": "Python", "icon": "🐍", "description": "Strong command of Python for backend development, data processing, and AI/ML integration with clean, maintainable code." },
+      { "name": "C++", "icon": "⚡", "description": "Solid foundation in C++ for problem-solving, data structures, and algorithmic thinking with focus on performance optimization." }
+    ],
+    "frameworks": [
+      { "name": "Node.js", "icon": "🟢", "description": "Building high-performance server-side applications with Node.js runtime. Expert in event-driven architecture and non-blocking I/O." },
+      { "name": "React.js", "icon": "⚛️", "description": "Creating dynamic, responsive user interfaces with React. Proficient in hooks, state management, and component-based architecture." },
+      { "name": "Express.js", "icon": "🚂", "description": "Developing RESTful APIs and backend services using Express.js with middleware, routing, and error handling." },
+      { "name": "MongoDB", "icon": "🍃", "description": "Designing and optimizing NoSQL databases with MongoDB. Expert in schema design, aggregation pipelines, and indexing." },
+      { "name": "RESTful APIs", "icon": "🔌", "description": "Architecting and implementing RESTful API endpoints with proper HTTP methods, status codes, and best practices." },
+      { "name": "Bootstrap", "icon": "🎨", "description": "Crafting responsive, mobile-first web designs using Bootstrap framework for rapid UI development." },
+      { "name": "Redux", "icon": "🔄", "description": "Managing complex application state with Redux for predictable state updates and centralized data flow." }
+    ],
+    "tools": [
+      { "name": "MongoDB Atlas", "icon": "☁️", "description": "Managing cloud-based MongoDB databases with Atlas. Expert in cluster configuration, monitoring, and backup strategies." },
+      { "name": "Google Cloud Storage", "icon": "📦", "description": "Implementing scalable file storage solutions using Google Cloud Storage with secure upload and retrieval systems." },
+      { "name": "Gemini API", "icon": "🤖", "description": "Integrating Google's Gemini AI for advanced features like OCR, content generation, and intelligent automation." },
+      { "name": "GitHub", "icon": "🐙", "description": "Version control and collaboration using Git and GitHub. Proficient in branching strategies, PR workflows, and CI/CD." },
+      { "name": "VS Code", "icon": "💼", "description": "Efficient development workflow with VS Code. Utilizing extensions, debugging tools, and productivity features." },
+      { "name": "JWT", "icon": "🔐", "description": "Implementing secure authentication and authorization using JSON Web Tokens for stateless session management." }
+    ],
+    "backend": [
+      { "name": "Database Operations", "icon": "🗄️", "description": "Designing efficient database schemas and performing CRUD operations with optimized queries and transaction management." },
+      { "name": "API Development", "icon": "🔧", "description": "Creating robust, scalable APIs with proper documentation, error handling, and security best practices." },
+      { "name": "Authentication Systems", "icon": "🔑", "description": "Building secure authentication flows with JWT, OAuth, and session management for user identity verification." },
+      { "name": "Data Processing", "icon": "📊", "description": "Processing and transforming large datasets with efficient algorithms for data validation and manipulation." },
+      { "name": "Server Architecture", "icon": "🏗️", "description": "Designing scalable server architectures with microservices, load balancing, and performance optimization." }
+    ],
+    "ai": [
+      { "name": "Gemini API Integration", "icon": "🧠", "description": "Integrating Google's Gemini AI models for intelligent automation, content generation, and advanced processing." },
+      { "name": "Prompt Engineering", "icon": "✍️", "description": "Crafting effective prompts for AI models to achieve optimal results with context management and refinement." },
+      { "name": "Video Generation (Veo3)", "icon": "🎬", "description": "Implementing AI-powered video generation using Veo3 for automated content creation and visual storytelling." },
+      { "name": "GenAI Applications", "icon": "🚀", "description": "Building generative AI applications that leverage large language models for innovative solutions." },
+      { "name": "OCR Processing", "icon": "📸", "description": "Extracting text from images and documents using OCR technology for automated data entry and processing." },
+      { "name": "Automated Content Creation", "icon": "✨", "description": "Developing systems for automated content generation using AI, reducing manual effort and improving efficiency." }
+    ],
+    "soft": [
+      { "name": "Problem Solving", "icon": "🎯", "description": "Breaking down complex problems into manageable solutions with analytical thinking and creative approaches." },
+      { "name": "Team Collaboration", "icon": "🤝", "description": "Working effectively in cross-functional teams, communicating clearly, and contributing to shared goals." },
+      { "name": "Quick Learning", "icon": "📚", "description": "Rapidly adapting to new technologies and frameworks with self-directed learning and hands-on experimentation." },
+      { "name": "Analytical Thinking", "icon": "🔍", "description": "Analyzing requirements, identifying patterns, and making data-driven decisions for optimal solutions." },
+      { "name": "Communication", "icon": "💬", "description": "Articulating technical concepts clearly to both technical and non-technical stakeholders for effective collaboration." }
+    ]
   },
   "experience": [
     {
