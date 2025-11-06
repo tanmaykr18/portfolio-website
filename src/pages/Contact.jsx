@@ -99,19 +99,19 @@ const Contact = () => {
                     <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
                       {info.icon}
                     </div>
-                    <div>
+                    <div className="flex-1 min-w-0">
                       <h3 className="text-sm font-semibold text-gray-600 mb-1">
                         {info.label}
                       </h3>
                       {info.href ? (
                         <a
                           href={info.href}
-                          className="text-lg text-gray-900 hover:text-primary transition-colors"
+                          className="text-lg text-gray-900 hover:text-primary transition-colors break-all word-break break-words"
                         >
                           {info.value}
                         </a>
                       ) : (
-                        <p className="text-lg text-gray-900">
+                        <p className="text-lg text-gray-900 break-words">
                           {info.value}
                         </p>
                       )}
