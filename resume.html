@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanmay Kumar - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 11pt;
+            line-height: 1.4;
+            color: #000;
+            background: #fff;
+        }
+        
+        .resume-container {
+            display: flex;
+            max-width: 8.5in;
+            min-height: 11in;
+            margin: 0 auto;
+            background: white;
+        }
+        
+        /* Left Sidebar */
+        .left-sidebar {
+            width: 30%;
+            background: #f5f5f5;
+            padding: 40px 25px;
+            border-right: 1px solid #ddd;
+        }
+        
+        .profile-section {
+            margin-bottom: 30px;
+        }
+        
+        .name {
+            font-size: 22pt;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            line-height: 1.2;
+        }
+        
+        .contact-item {
+            margin-bottom: 8px;
+            font-size: 9pt;
+            word-wrap: break-word;
+        }
+        
+        .contact-label {
+            font-weight: bold;
+            color: #2c3e50;
+            display: block;
+            margin-bottom: 2px;
+        }
+        
+        .contact-item a {
+            color: #2563EB;
+            text-decoration: none;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
+        .sidebar-section {
+            margin-bottom: 25px;
+        }
+        
+        .sidebar-heading {
+            font-size: 12pt;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #2c3e50;
+        }
+        
+        .skill-category {
+            margin-bottom: 12px;
+        }
+        
+        .skill-category-title {
+            font-weight: bold;
+            font-size: 10pt;
+            color: #2c3e50;
+            margin-bottom: 4px;
+        }
+        
+        .skill-list {
+            font-size: 9pt;
+            line-height: 1.5;
+            color: #333;
+        }
+        
+        /* Main Content */
+        .main-content {
+            width: 70%;
+            padding: 40px 30px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-heading {
+            font-size: 14pt;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #2c3e50;
+        }
+        
+        .summary-text {
+            font-size: 10pt;
+            text-align: justify;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        
+        .job-title {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 3px;
+        }
+        
+        .job-meta {
+            font-size: 9pt;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+        
+        .job-description {
+            font-size: 10pt;
+            margin-left: 0;
+            padding-left: 0;
+            list-style: none;
+        }
+        
+        .job-description li {
+            margin-bottom: 6px;
+            padding-left: 15px;
+            position: relative;
+            text-align: justify;
+        }
+        
+        .job-description li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .project-item {
+            margin-bottom: 15px;
+        }
+        
+        .project-title {
+            font-size: 10pt;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 3px;
+        }
+        
+        .project-description {
+            font-size: 9pt;
+            line-height: 1.4;
+            text-align: justify;
+            margin-bottom: 3px;
+        }
+        
+        .tech-stack {
+            font-size: 8pt;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .tech-stack a {
+            color: #2563EB;
+            text-decoration: none;
+        }
+        
+        .tech-stack a:hover {
+            text-decoration: underline;
+        }
+        
+        .education-item {
+            margin-bottom: 12px;
+        }
+        
+        .degree {
+            font-size: 10pt;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .institution {
+            font-size: 9pt;
+            color: #666;
+        }
+        
+        .cert-item {
+            margin-bottom: 8px;
+            font-size: 9pt;
+        }
+        
+        .languages {
+            font-size: 9pt;
+        }
+        
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .resume-container {
+                box-shadow: none;
+                max-width: none;
+                min-height: auto;
+            }
+            a {
+                color: #2563EB;
+                text-decoration: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Left Sidebar -->
+        <div class="left-sidebar">
+            <div class="profile-section">
+                <div class="name">TANMAY<br>KUMAR</div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-heading">CONTACT</div>
+                <div class="contact-item">
+                    <span class="contact-label">Address</span>
+                    Ghaziabad, Uttar Pradesh
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Phone</span>
+                    <a href="tel:+917061745715">+91-7061745715</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Email</span>
+                    <a href="mailto:tanmaykumar18102002@gmail.com">tanmaykumar18102002@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">LinkedIn</span>
+                    <a href="https://linkedin.com/in/tanmay-kumar181002" target="_blank">linkedin.com/in/tanmay-kumar181002</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">GitHub</span>
+                    <a href="https://github.com/tanmaykr18" target="_blank">github.com/tanmaykr18</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Portfolio</span>
+                    <a href="https://portfolio-website-jjx8.vercel.app" target="_blank">portfolio-website-jjx8.vercel.app</a>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-heading">SKILLS</div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-title">Languages</div>
+                    <div class="skill-list">JavaScript, Python</div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-title">Frameworks</div>
+                    <div class="skill-list">Node.js, React.js, Express.js, MongoDB, RESTful APIs, Redux, Bootstrap</div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-title">Tools</div>
+                    <div class="skill-list">MongoDB Atlas, Google Cloud Storage, Gemini API, GitHub, VS Code, JWT, Git, Postman</div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-title">Backend</div>
+                    <div class="skill-list">Database Operations, API Development, Authentication Systems, Data Processing</div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-title">AI & ML</div>
+                    <div class="skill-list">Gemini API Integration, Prompt Engineering, Video Generation (Veo3), OCR Processing</div>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-heading">EDUCATION</div>
+                <div class="education-item">
+                    <div class="degree">B. Tech - Computer Science</div>
+                    <div class="institution">SRM Institute of Science and Technology</div>
+                    <div class="institution">2020 - 2024 | CGPA: 8.15</div>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-heading">CERTIFICATIONS</div>
+                <div class="cert-item">
+                    <strong>Front-End Development</strong><br>
+                    Meta - Coursera<br>
+                    Dec 2023
+                </div>
+                <div class="cert-item">
+                    <strong>JavaScript Programming</strong><br>
+                    Meta - Coursera<br>
+                    Nov 2023
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-heading">LANGUAGES</div>
+                <div class="languages">English • Hindi</div>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="section">
+                <div class="section-heading">PROFESSIONAL SUMMARY</div>
+                <p class="summary-text">
+                    I am a MERN stack developer and problem solver focused on building scalable restaurant management systems and AI-powered applications. I have extensive experience in backend development, database operations, API authentication, and GenAI integration. I specialize in creating data-driven solutions that improve operational efficiency and decision-making in fast-moving startup environments where ownership and impact are important.
+                </p>
+                <p class="summary-text">
+                    Engineering professional with proven ability to innovate and solve complex technical challenges. Known for delivering high-quality solutions and driving team success through effective collaboration and adaptability.
+                </p>
+            </div>
+            
+            <div class="section">
+                <div class="section-heading">WORK HISTORY</div>
+                <div class="job-title">Founding Engineer</div>
+                <div class="job-meta">Jun 2024 - Present | <a href="https://cactus.ai" target="_blank" style="color: #666; text-decoration: none;">cactus.ai</a> | Remote</div>
+                <ul class="job-description">
+                    <li>Architected comprehensive restaurant management platform with full-stack MERN implementation serving multiple restaurant locations</li>
+                    <li>Built advanced invoice extraction system using Gemini OCR for automated vendor data processing and ingredient mapping, reducing manual data entry by 90%</li>
+                    <li>Engineered recipe automation system by fetching POS menu data and implementing Gemini context caching to generate complete recipes with ingredients, quantities, and cooking instructions</li>
+                    <li>Developed inventory management system with multi-unit conversions and automated ingredient tracking based on POS sales integration</li>
+                    <li>Designed super admin panel for global tenant management and centralized restaurant data administration</li>
+                    <li>Created robust backend APIs with Node.js and Express.js, implementing secure authentication and database operations</li>
+                    <li>Built interactive dashboards for real-time financial metrics and profit analytics using React.js</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <div class="section-heading">PROJECTS</div>
+                
+                <div class="project-item">
+                    <div class="project-title">Personal Portfolio Website</div>
+                    <div class="project-description">
+                        Built a modern, responsive portfolio website showcasing MERN stack expertise and restaurant management projects. Implemented smooth scroll animations, project filtering, and interactive UI components. Deployed on Vercel with optimized performance.
+                    </div>
+                    <div class="tech-stack">Tech: React.js, Vite, Tailwind CSS, Framer Motion | Live: <a href="https://portfolio-website-jjx8.vercel.app" target="_blank">portfolio-website-jjx8.vercel.app</a></div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-title">Advanced Invoice Extraction System</div>
+                    <div class="project-description">
+                        Built comprehensive invoice processing system using Node.js and Gemini OCR for restaurant supply chain automation. Implemented vendor-specific parsing rules with dynamic MongoDB collections and context caching for optimized data extraction.
+                    </div>
+                    <div class="tech-stack">Tech: Node.js, MongoDB, Gemini API, Express.js</div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-title">AI-Powered Video Generation System</div>
+                    <div class="project-description">
+                        Engineered sophisticated prompt generation system for Veo3 video creation using advanced prompts. Integrated Gemini API for automated content transformation and built dynamic video generation workflows, achieving 85% automation.
+                    </div>
+                    <div class="tech-stack">Tech: JavaScript, Node.js, Gemini API, Veo3</div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-title">Restaurant Management Dashboard</div>
+                    <div class="project-description">
+                        Developed comprehensive MERN stack application for restaurant operations. Implemented real-time analytics for food costs, menu pricing, and profit tracking with secure JWT authentication and role-based access control.
+                    </div>
+                    <div class="tech-stack">Tech: MongoDB, Express.js, React.js, Node.js, JWT</div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-title">Voice-Controlled AI Chatbot</div>
+                    <div class="project-description">
+                        Developed interactive chatbot with Gemini AI integration featuring speech-to-text and text-to-speech functionality. Created auto-resizing interface with dynamic API response handling.
+                    </div>
+                    <div class="tech-stack">Tech: JavaScript, HTML5, CSS3, Gemini API, Web Speech API</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-heading">ACHIEVEMENTS</div>
+                <div class="project-item">
+                    <div class="project-title">Hackathon Winner - IIT Patna</div>
+                    <div class="project-description">
+                        Developed Chrome extension with AI-powered text summarization and code explanation features using Gemini API. Implemented voice functionality for content reading and instant webpage text analysis.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

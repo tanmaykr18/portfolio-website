@@ -2,10 +2,12 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import portfolioData from '../../data/portfolio.json';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { personal } = portfolioData;
 
   const navLinks = [
     { path: '/', label: 'Home' },
@@ -23,7 +25,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <span className="text-2xl font-bold text-gradient">Tanmay Kumar</span>
+            <span className="text-2xl font-bold text-gradient">{personal.name}</span>
           </Link>
 
           {/* Desktop Navigation */}

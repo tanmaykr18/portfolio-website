@@ -11,6 +11,14 @@
     "avatar": "/images/profile.jpg",
     "resume": "/documents/tanmay-kumar-resume.pdf"
   },
+  "skillCategories": [
+    { "id": "languages", "title": "Languages", "icon": "💻" },
+    { "id": "frameworks", "title": "Frameworks", "icon": "🚀" },
+    { "id": "tools", "title": "Tools", "icon": "🛠️" },
+    { "id": "backend", "title": "Backend", "icon": "⚙️" },
+    { "id": "ai", "title": "AI/ML", "icon": "🤖" },
+    { "id": "soft", "title": "Soft Skills", "icon": "💡" }
+  ],
   "skills": {
     "languages": [
       { "name": "JavaScript", "icon": "💻", "description": "Expert in modern ES6+ JavaScript for full-stack development. Proficient in async programming, promises, and building scalable applications." },

@@ -5,16 +5,14 @@ import { staggerContainer, staggerItem } from '../../utils/animations';
 
 const Skills = () => {
   const [ref, inView] = useScrollAnimation();
-  const { skills } = portfolioData;
+  const { skills, skillCategories: categories } = portfolioData;
 
-  const skillCategories = [
-    { title: 'Languages', items: skills.languages, icon: '💻' },
-    { title: 'Frameworks', items: skills.frameworks, icon: '🚀' },
-    { title: 'Tools', items: skills.tools, icon: '🛠️' },
-    { title: 'Backend', items: skills.backend, icon: '⚙️' },
-    { title: 'AI/ML', items: skills.ai, icon: '🤖' },
-    { title: 'Soft Skills', items: skills.soft, icon: '💡' },
-  ];
+  // Build skill categories dynamically from JSON
+  const skillCategories = categories.map(category => ({
+    title: category.title,
+    icon: category.icon,
+    items: skills[category.id] || []
+  }));
 
   return (
     <section className="section-container bg-gray-50" ref={ref}>
@@ -47,7 +45,7 @@ const Skills = () => {
                     key={skillIdx}
                     className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium"
                   >
-                    {skill}
+                    {skill.name}
                   </span>
                 ))}
               </div>

@@ -7,17 +7,15 @@ import SkillModal from './SkillModal';
 import { slideUp, slideDown, fadeIn } from '../../utils/animations';
 
 const Hero = () => {
-  const { personal, skills } = portfolioData;
+  const { personal, skills, skillCategories: categories } = portfolioData;
   const [selectedCategory, setSelectedCategory] = useState(null);
 
-  const skillCategories = [
-    { title: 'Languages', items: skills.languages, icon: '💻' },
-    { title: 'Frameworks', items: skills.frameworks, icon: '🚀' },
-    { title: 'Tools', items: skills.tools, icon: '🛠️' },
-    { title: 'Backend', items: skills.backend, icon: '⚙️' },
-    { title: 'AI/ML', items: skills.ai, icon: '🤖' },
-    { title: 'Soft Skills', items: skills.soft, icon: '💡' },
-  ];
+  // Build skill categories dynamically from JSON
+  const skillCategories = categories.map(category => ({
+    title: category.title,
+    icon: category.icon,
+    items: skills[category.id] || []
+  }));
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
